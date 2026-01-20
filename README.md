@@ -6,7 +6,7 @@ Welcome to my collection of apps and tools. Each project has its own folder with
 
 ### Forex Journal App
 Track your Forex trades efficiently with this desktop app.  
-[Download / Paid Version on Gumroad](https://codesmith8.gumroad.com/l/nstdyr)
+[Download / Paid Version on Gumroad](https://gum.new/gum/cmkmwhnvp000004jp41b4btpg)
 
 ---
 
