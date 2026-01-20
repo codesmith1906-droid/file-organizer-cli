@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discipline FX Journal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Good day, Trader!</h1>
+    <p>How was your trade today?</p>
+  </header>
+
+  <main>
+    <!-- Add Trade Section -->
+    <section id="add-trade">
+      <h2>Add Trade</h2>
+      <div class="form-grid">
+        <input id="pair" placeholder="Pair (EURUSD)" />
+        <input id="date" type="date" />
+        <select id="session">
+          <option>Asia</option>
+          <option>London</option>
+          <option>New York</option>
+        </select>
+        <select id="direction">
+          <option>Buy</option>
+          <option>Sell</option>
+        </select>
+        <input id="entry" type="number" placeholder="Entry Price" />
+        <input id="sl" type="number" placeholder="Stop Loss" />
+        <input id="tp" type="number" placeholder="Take Profit" />
+        <input id="lot" type="number" placeholder="Lot Size" />
+        <input id="risk" type="number" placeholder="Risk %" />
+        <input id="emotion" placeholder="Emotion (Calm, FOMO, etc.)" />
+        <select id="result">
+          <option>Pending</option>
+          <option>Win</option>
+          <option>Loss</option>
+          <option>Break-even</option>
+        </select>
+      </div>
+      <button id="saveTrade">Save Trade</button>
+    </section>
+
+    <!-- Summary Section -->
+    <section id="summary">
+      <h2>Summary</h2>
+      <div class="cards">
+        <div class="card" id="totalTrades">Total Trades: 0</div>
+        <div class="card" id="winRate">Win Rate: 0%</div>
+        <div class="card" id="avgRR">Avg R:R: 0</div>
+        <div class="card" id="bestPair">Best Pair: -</div>
+      </div>
+      <canvas id="winLossChart" width="400" height="400"></canvas>
+    </section>
+
+    <!-- Trades Table -->
+    <section id="trades">
+      <h2>Trades</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Pair</th>
+            <th>Date</th>
+            <th>Session</th>
+            <th>Dir</th>
+            <th>R:R</th>
+            <th>Result</th>
+            <th>Emotion</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="tradeTable"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
