@@ -1,6 +1,3 @@
-# file-organizer-cli
-Free CLI for merging and splittin# My Projects Portfolio
-
 Welcome to my collection of apps and tools. Each project has its own folder with code and documentation. Paid versions (if available) are linked via Gumroad.
 
 ---
